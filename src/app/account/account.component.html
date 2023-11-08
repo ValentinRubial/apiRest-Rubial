@@ -1,0 +1,22 @@
+<mat-card>
+   <mat-card-header>
+      <mat-card-title>Crear Cuenta</mat-card-title>
+   </mat-card-header>
+   <mat-card-content>
+      <form [formGroup]="registroForm" (ngSubmit)="registrarse()">
+         <mat-form-field class="full-width">
+            <input matInput formControlName="nombre" placeholder="Nombre">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <input matInput formControlName="apellido" placeholder="Apellido">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <input matInput formControlName="email" placeholder="Correo electrónico" type="email">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <input matInput formControlName="password" placeholder="Contraseña" type="password">
+         </mat-form-field>
+         <button mat-raised-button color="primary" type="submit">Registrarse</button>
+      </form>
+   </mat-card-content>
+</mat-card>
